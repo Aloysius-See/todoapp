@@ -1,0 +1,70 @@
+/* Task List Styles */
+h1#appname {
+    color:#fbfbfc;
+    font-size: 300%;
+}
+
+h1#edit-title {
+    color:#fbfbfc;
+    font-size: 300%;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Ensure the font is set */
+    background-color: #071f35; /* Set a background color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+ol#task-list {
+    color:aliceblue;
+    padding-left: 20px; /* Adjust padding as needed */
+    max-height: 200px;
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0;
+}
+
+ol#task-list li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+ol#task-list li:last-child {
+    border-bottom: none;
+}
+
+ol#task-list li .task-form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+ol#task-list li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+ol#task-list li span.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+ol#task-list li .edit-btn, ol#task-list li .delete-btn {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+ol#task-list li .edit-btn:hover, ol#task-list li .delete-btn:hover {
+    text-decoration: underline;
+}
+
+ol#task-list li .delete-btn , .cancel-btn{
+    color: #dc3545;
+}
