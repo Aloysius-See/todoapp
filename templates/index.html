@@ -21,7 +21,8 @@
            {% for todo in todos %}
            <li>
             <form action="{{ url_for('check', id=todo.id) }}" method="post" class="task-form">
-                <span {% if todo.done %} class="completed" {% endif %}>{{ todo.todo }}</span>
+                <!-- {% if todo.done %} class="completed" {% endif %}   goes inbetween the span later on-->
+                <span>{{ todo.todo }}</span> 
                 <a href="{{ url_for('edit', id=todo.id) }}" class="edit-btn">Edit</a>
                 <a href="{{ url_for('delete', id=todo.id) }}" class="delete-btn" onclick="return confirm('Are you sure you want to delete this task?');">Delete</a>
             </form>
